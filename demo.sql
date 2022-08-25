@@ -88,6 +88,15 @@ CREATE TABLE products (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE orders (
+    id INT NOT NULL,
+    order_number INT
+    products_id INT,
+    customers_id INT
+    PRIMARY KEY (id),
+    FOREIGN KEY 
+)
+
 
 
 
