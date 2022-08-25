@@ -1,0 +1,20 @@
+{
+  "name": "sql",
+  "version": "1.0.0",
+  "description": "Structure Query Language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElvisGarcia079/SQL-Multiverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElvisGarcia079/SQL-Multiverse/issues"
+  },
+  "homepage": "https://github.com/ElvisGarcia079/SQL-Multiverse#readme"
+}
