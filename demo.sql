@@ -37,3 +37,12 @@ VALUES (
 
 -- I can also Read from my table as follows (it's like the console.log in JS) --
 SELECT * FROM customers;
+
+-- I can choose to Read only a particular column from a table by specifying its name
+SELECT first_name FROM customers;
+
+-- I can choose to Read multiple specific columns from a table by specifying their names separated by a comma
+SELECT first_name, last_name FROM customers;
+
+-- You can also choose to only get a particular column based on a condition to narrow down or filter your query. 
+SELECT first_name, last_name FROM customers WHERE age > 24;
