@@ -18,7 +18,7 @@ VALUES (
     "John",
     "Snow",
     25
-)
+);
 
 -- Can add multiple entires to the table(s) as well by assing more value sets --
 
@@ -33,5 +33,7 @@ VALUES (
     "Fred",
     "Flinstone",
     30
-)
+);
 
+-- I can also Read from my table as follows (it's like the console.log in JS) --
+SELECT * FROM customers;
