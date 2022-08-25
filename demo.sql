@@ -125,7 +125,7 @@ INSERT INTO orders (id, order_number, products_id, customers_id)
 VALUES (
     1,
     0009,
-    2,
+    3,
     1
 ), (
     2, 
@@ -136,10 +136,10 @@ VALUES (
 
 -- Now that I have a table with a foreign key, it's referring to the primary key of the table its referencing. So now this orders table has an association with the Customers Table, as well as the Products Table. This means that from this table "orders", I can extract information from both the Products and the Customers! This is where Inner Joining comes in, and it's only possible thanks to the foreign keys in our "orders" table referencing the values in the "customers" and "products" table
 
-SELECT orders.order_number, customers.name, customers.age
+SELECT orders.order_number, customers.first_name, customers.last_name, customers.age
 FROM orders
 INNER JOIN customers
-ON orders.customer_id = customers.id;
+ON orders.customers_id = customers.id;
 
 SELECT orders.order_number, products.itemName, products.price
 FROM orders
