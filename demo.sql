@@ -11,4 +11,27 @@ CREATE TABLE customers (
 );
 
 
+-- Adding entries to the table(s) -- 
+INSERT INTO customers (id, first_name, last_name, age)
+VALUES (
+    1,
+    "John",
+    "Snow",
+    25
+)
+
+-- Can add multiple entires to the table(s) as well by assing more value sets --
+
+INSERT INTO customers (id, first_name, last_name, age)
+VALUES (
+    2, 
+    "Johnny",
+    "Bravo",
+    23
+), (
+    3, 
+    "Fred",
+    "Flinstone",
+    30
+)
 
