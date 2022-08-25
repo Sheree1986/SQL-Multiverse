@@ -98,9 +98,9 @@ CREATE TABLE products (
 
 CREATE TABLE orders (
     id INT NOT NULL,
-    order_number INT
+    order_number INT,
     products_id INT,
-    customers_id INT
+    customers_id INT,
     PRIMARY KEY (id),
     FOREIGN KEY (customers_id) REFERENCES customers(id),
     FOREIGN KEY (products_id) REFERENCES products(id) 
