@@ -62,3 +62,10 @@ SET (
     age = 31
 )
 WHERE first_name = "Johnny";
+
+-- You can also add columns to your table by altering the table as follows: 
+ALTER TABLE customers
+ADD (
+    address VARCHAR(50)
+);
+
