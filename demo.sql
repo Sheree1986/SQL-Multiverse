@@ -84,8 +84,10 @@ DELETE FROM customers where id = 2;
 CREATE TABLE products (
     id INT NOT NULL, 
     itemName VARCHAR(20),
-    price MONEY
+    price MONEY,
+    PRIMARY KEY (id)
 );
+
 
 
 
