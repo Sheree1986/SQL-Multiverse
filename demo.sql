@@ -147,4 +147,11 @@ INNER JOIN products
 ON orders.products_id = products.id;
 
 
-
+-- You can even take it a step further and inner join multiple tables as follows: 
+    -- You pick your properties, and then run the inner joins on both the tables you want to reference and then you have access. It's almost like importing a module. 
+SELECT order_number, customers.first_name, customers.last_name, products.itemname, products.price
+FROM orders 
+INNER JOIN customers
+    ON customers_id = customers.id
+INNER JOIN products
+    ON products_id = products.id;
