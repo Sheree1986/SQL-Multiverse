@@ -64,6 +64,19 @@ WHERE first_name = "Johnny";
 ALTER TABLE customers
 ADD address VARCHAR(50);
 
+-- Notice if you read the table, you'll have a column for the address full of NULL values. It's similar to how when you don't assign a value to a variable in JS, it's undefined by default. You can ofcourse, assign it or give it a value to update it. 
+UPDATE customers
+SET address = "123 Generic Street, GenCity, GC, 12345" 
+WHERE id = 1;
+
+UPDATE customers
+SET address = "456 Basic Street, BasicCity, BC, 98765" 
+WHERE id = 2;
+
+UPDATE customers
+SET address = "789 Common Street, CommonCity, CC, 65748" 
+WHERE id = 3;
+
 -- Finally, you have the ability to delete the table: 
 DELETE FROM customers;
 
