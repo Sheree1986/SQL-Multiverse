@@ -62,9 +62,7 @@ WHERE first_name = "Johnny";
 
 -- You can also add columns to your table by altering the table. This is like appending, or pushing to the end of an array: 
 ALTER TABLE customers
-ADD (
-    address VARCHAR(50)
-);
+ADD address VARCHAR(50);
 
 -- Finally, you have the ability to delete the table: 
 DELETE FROM customers;
