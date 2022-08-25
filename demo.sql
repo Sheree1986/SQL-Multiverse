@@ -63,9 +63,29 @@ SET (
 )
 WHERE first_name = "Johnny";
 
--- You can also add columns to your table by altering the table as follows: 
+-- You can also add columns to your table by altering the table. This is like appending, or pushing to the end of an array: 
 ALTER TABLE customers
 ADD (
     address VARCHAR(50)
 );
+
+-- Finally, you have the ability to delete the table: 
+DELETE FROM customers;
+
+-- You can also delete specific entries from a table: 
+DELETE FROM customers where id = 2;
+
+-- *********** MOVING ON TO INNER JOIN ************ --
+
+-- When you "join" two tables in SQL, you're creating a custom table made up of the properties from two seperate tables that you would like to combine. This becomes extremly useful because the better our tables are, the easier we can extract the data from our database to serve our needs. 
+
+-- The first thing you want to do is create several other tables
+
+CREATE TABLE products (
+    id INT NOT NULL, 
+    itemName VARCHAR(20),
+    price MONEY
+);
+
+
 
