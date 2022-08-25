@@ -48,10 +48,8 @@ SELECT first_name, last_name FROM customers;
 SELECT first_name, last_name FROM customers WHERE age > 24;
 
 -- You can update a record from your database table as well. It's like re-assigning a variable in JS
-UPDATE customers (age) 
-SET (
-    age = 35
-)
+UPDATE customers
+SET age = 35
 WHERE first_name = "Fred";
 
 -- You can update as many records as you'd like to update
