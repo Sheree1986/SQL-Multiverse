@@ -53,12 +53,11 @@ SET age = 35
 WHERE first_name = "Fred";
 
 -- You can update as many records as you'd like to update
-UPDATE customers (first_name, last_name, age)
-SET (
+UPDATE customers
+SET 
     first_name = "Bruce",
     last_name = "Wayne",
-    age = 31
-)
+    age = 31 
 WHERE first_name = "Johnny";
 
 -- You can also add columns to your table by altering the table. This is like appending, or pushing to the end of an array: 
